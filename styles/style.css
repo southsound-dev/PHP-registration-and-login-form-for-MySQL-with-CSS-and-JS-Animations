@@ -29,7 +29,7 @@ body {
   flex-direction: row;
   position: relative;
   overflow: hidden;
-  min-height: 650px;
+  min-height: 550px;
   background-color: whitesmoke;
 }
 
@@ -163,7 +163,7 @@ form {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .hello {
@@ -178,8 +178,8 @@ h1 {
 
 input[type="text"],
 input[type="password"] {
-  height: 35px;
-  padding: 0px 0px 0px 50px !important;
+  height: 30px;
+  padding: 0px 0px 0px 40px !important;
   width: 300px;
   color: grey;
 }
@@ -218,7 +218,7 @@ input[type="submit"] {
 
 .icon {
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 1rem;
 }
 
 .remember h5 {
@@ -228,28 +228,28 @@ input[type="submit"] {
 .user i {
   position: absolute;
   left: 15px;
-  top: 12px;
+  top: 11px;
   color: gray;
 }
 
 .email i {
   position: absolute;
   left: 15px;
-  top: 12px;
+  top: 11px;
   color: gray;
 }
 
 .phone i {
   position: absolute;
   left: 15px;
-  top: 12px;
+  top: 11px;
   color: gray;
 }
 
 .password i {
   position: absolute;
   left: 17px;
-  top: 13px;
+  top: 11px;
   color: gray;
 }
 
@@ -323,6 +323,15 @@ footer span {
   align-self: center;
   justify-content: center;
 }
+
+.error .blue {
+  margin:0px;
+}
+
+h6.grey {
+  margin: 1rem;
+}
+
 
 /* Animation Styles */
 #container.right-panel-active .overlay {

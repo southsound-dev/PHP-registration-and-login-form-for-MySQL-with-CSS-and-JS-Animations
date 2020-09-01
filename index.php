@@ -21,12 +21,12 @@
     <a href="#"><i class="fab fa-linkedin-in"></i></a>
     <a href="#"><i class="fab fa-github"></i></a>
     </div>
-<h5 class="grey">Or enter your login details</h5>
+<h6 class="grey">Or enter your login details</h6>
 <div class="email icon"><input type="text" id="email_in" name="email" placeholder="Email address"
 value="<?php if (isset($_COOKIE['emailcookie'])) {
     echo $_COOKIE['emailcookie'];}
 ?>"
-required/><i class="fa fa-envelope fa-lg"></i></div>
+required/><i class="fa fa-envelope fa-sm"></i></div>
 <div class="password icon"><input type="password" id="password_up" name="password" placeholder="Password"
 value="<?php if (isset($_COOKIE['password'])) {
     echo $_COOKIE['password'];}
@@ -34,7 +34,7 @@ value="<?php if (isset($_COOKIE['password'])) {
     required/><i class="fas fa-key"></i><i class="show fas fa-eye-slash" onclick="myFunction()"></i></div>
 <div class="remember grey">
 <input type="checkbox" id="remember" name="remember"/>
-<h5>Remember me</h5>
+<h6>Remember me</h6>
 </div>
 <div class="submit">
 <input type="submit" name="signin" id="btnin" value="Log in"/>
@@ -44,7 +44,7 @@ value="<?php if (isset($_COOKIE['password'])) {
 if (isset($_GET['LoginFailed'])) {
     ?>
 <br>
-<h4 class="blue"><i class="fas fa-exclamation-triangle"></i> Login Failed!</h4>
+<h6 class="blue"><i class="fas fa-exclamation-triangle"></i> Login Failed!</h6>
 <?php
 }
 ?>
@@ -59,10 +59,10 @@ if (isset($_GET['LoginFailed'])) {
     <a href="#"><i class="fab fa-linkedin-in"></i></a>
     <a href="#"><i class="fab fa-github"></i></a>
     </div>
-<h5 class="grey">Or enter your personal details</h5>
-<div class="user icon"><input type="text" id="user" name="user" placeholder="Full Name" required/><i class="fa fa-user fa-lg"></i></div>
-<div class="email icon"><input type="text" id="email_up" name="email" placeholder="Email address" required/><i class="fa fa-envelope fa-lg"></i></div>
-<div class="phone icon"><input type="text" id="phone" name="phone" placeholder="Phone number" required/><i class="fa fa-phone fa-lg"></i></div>
+<h6 class="grey">Or enter your personal details</h6>
+<div class="user icon"><input type="text" id="user" name="user" placeholder="Full Name" required/><i class="fa fa-user fa-sm"></i></div>
+<div class="email icon"><input type="text" id="email_up" name="email" placeholder="Email address" required/><i class="fa fa-envelope fa-sm"></i></div>
+<div class="phone icon"><input type="text" id="phone" name="phone" placeholder="Phone number" required/><i class="fa fa-phone fa-sm"></i></div>
 <div class="password icon"><input type="password" id="password" name="password" placeholder="Create password" required/><i class="fas fa-key"></i><i class="show fas fa-eye-slash" onclick="myFunction()"></i></div>
 <div class="password icon"><input type="password" id="cpassword" name="cpassword" placeholder="Repeat password" required/><i class="fas fa-key"></i><i class="show fas fa-eye-slash" onclick="myFunction()"></i></div>
 <div class="submit">
@@ -75,28 +75,28 @@ if (isset($_GET['password_error'])) {
     <script> container.classList.add("right-panel-active") </script>
 <br>
 <div class="error">
-<h4 class="blue"><i class="fas fa-exclamation-triangle"></i> Password must be have minimum of 8 characters with at least 1 number and one uppercase and one lowercase character</h4>
+<h6 class="blue"><i class="fas fa-exclamation-triangle"></i> Password must be have minimum of 8 characters with at least 1 number and one uppercase and one lowercase character</h6>
 </div>
 <?php
 } if (isset($_GET['invalid_email'])) {
   ?>
   <script> container.classList.add("right-panel-active") </script>
   <div class="error">
-<h4 class="blue"><i class="fas fa-exclamation-triangle"></i> Invalid email!</h4>
+<h6 class="blue"><i class="fas fa-exclamation-triangle"></i> Invalid email!</h6>
 </div>
   <?php
 }if (isset($_GET['email_exists'])) {
   ?>
   <script> container.classList.add("right-panel-active") </script>
   <div class="error">
-<h4 class="blue"><i class="fas fa-exclamation-triangle"></i> Email Exists!</h4>
+<h6 class="blue"><i class="fas fa-exclamation-triangle"></i> Email Exists!</h6>
 </div>
   <?php
 } if (isset($_GET['password_match'])) {
   ?>
   <script> container.classList.add("right-panel-active") </script>
   <div class="error">
-<h4 class="blue"><i class="fas fa-exclamation-triangle"></i> Passwords are not matching!</h4>
+<h6 class="blue"><i class="fas fa-exclamation-triangle"></i> Passwords are not matching!</h6>
 </div>
   <?php
 }

@@ -1,4 +1,4 @@
-# PHP registration and login form with CSS and JS Animations
+# PHP registration and login form for MySQL with CSS and JS Animations
 It is a registration and login form with a double slider animation made in CSS and JS.
 It works with a mysql Db
 I have added the .sql file with the created tables.
