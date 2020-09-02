@@ -37,7 +37,7 @@ value="<?php if (isset($_COOKIE['password'])) {
 <h6>Remember me</h6>
 </div>
 <div class="submit">
-<input type="submit" name="signin" id="btnin" value="Log in"/>
+<button id="btnin" name="signin" type="submit" class="overlay_button">Log In</button>
 </div>
 <!-- <p class="grey">Forgot your password?</p> -->
 <?php
@@ -66,7 +66,7 @@ if (isset($_GET['LoginFailed'])) {
 <div class="password icon"><input type="password" id="password" name="password" placeholder="Create password" required/><i class="fas fa-key"></i><i class="show fas fa-eye-slash" onclick="myFunction()"></i></div>
 <div class="password icon"><input type="password" id="cpassword" name="cpassword" placeholder="Repeat password" required/><i class="fas fa-key"></i><i class="show fas fa-eye-slash" onclick="myFunction2()"></i></div>
 <div class="submit">
-<input type="submit" name="signup" id="btnup" value="Sign up"/>
+<button id="btnin" name="signup" type="submit" class="overlay_button">Sign up</button>
 </div>
 <?php
 if (isset($_GET['password_error'])) {
