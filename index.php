@@ -64,7 +64,7 @@ if (isset($_GET['LoginFailed'])) {
 <div class="email icon"><input type="text" id="email_up" name="email" placeholder="Email address" required/><i class="fa fa-envelope fa-sm"></i></div>
 <div class="phone icon"><input type="text" id="phone" name="phone" placeholder="Phone number" required/><i class="fa fa-phone fa-sm"></i></div>
 <div class="password icon"><input type="password" id="password" name="password" placeholder="Create password" required/><i class="fas fa-key"></i><i class="show fas fa-eye-slash" onclick="myFunction()"></i></div>
-<div class="password icon"><input type="password" id="cpassword" name="cpassword" placeholder="Repeat password" required/><i class="fas fa-key"></i><i class="show fas fa-eye-slash" onclick="myFunction()"></i></div>
+<div class="password icon"><input type="password" id="cpassword" name="cpassword" placeholder="Repeat password" required/><i class="fas fa-key"></i><i class="show fas fa-eye-slash" onclick="myFunction2()"></i></div>
 <div class="submit">
 <input type="submit" name="signup" id="btnup" value="Sign up"/>
 </div>
@@ -114,6 +114,7 @@ if (isset($_GET['password_error'])) {
     <h1>Hello dear Friend!</h1>
     <p>Do you want to become part of our community?</p>
     <button id="signUp" type="button" class="overlay_button">Sign Up</button>
+    <button id="signInMobile" type="button" class="overlay_button">Log In</button>
     </div>
     </div>
 </div>
@@ -126,6 +127,7 @@ if (isset($_GET['password_error'])) {
 <script>
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
+const signInButtonMobile = document.getElementById('signInMobile');
 const container = document.getElementById('container');
 
 signUpButton.addEventListener('click', () => {
@@ -136,27 +138,34 @@ signInButton.addEventListener('click', () => {
   container.classList.remove("right-panel-active");
 });
 
+signInButtonMobile.addEventListener('click', () => {
+  container.classList.add("mobile");
+});
+
 function myFunction() {
   var x = document.getElementById("password_up");
   var y = document.getElementById("password");
-  var z = document.getElementById("cpassword");
+
 
   if (x.type === "password") {
     x.type = "text";
   } else {
     x.type = "password";
-  }
+  };
   if (y.type === "password") {
     y.type = "text";
   } else {
     y.type = "password";
-  }
+  };}
+
+  function myFunction2() {
+    var z = document.getElementById("cpassword");
   if (z.type === "password") {
     z.type = "text";
   } else {
     z.type = "password";
   }
-}
+};
 
 
     </script>
